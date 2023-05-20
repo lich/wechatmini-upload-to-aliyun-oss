@@ -1,0 +1,3 @@
+<!--pages/index/index.wxml-->
+<!-- 懒得写页面了可以用weui或者vant -->
+<button bindtap="chooseImg">上传图片</button>
