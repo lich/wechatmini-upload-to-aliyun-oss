@@ -11,6 +11,7 @@ Page({
     // 选择照片
     chooseImg(){
         // 文档地址-https://developers.weixin.qq.com/miniprogram/dev/api/media/video/wx.chooseMedia.html
+        let that = this
         wx.chooseMedia({
           count:1,
           mediaType:['image'],
@@ -18,7 +19,7 @@ Page({
               console.log('上传成功',res)
               
               let tempFilePath = res.tempFiles[0]['tempFilePath']
-              this.uploadImage(tempFilePath)
+              that.uploadImage(tempFilePath)
           }
         })
     },
